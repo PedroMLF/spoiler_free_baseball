@@ -2,7 +2,7 @@
 
 ### Motivation
 
-[https://www.mlb.com/](https://www.mlb.com/) has highlight videos available for each of their games, as you can see [here](https://www.mlb.com/gameday/yankees-vs-nationals/2020/07/23/630851#game_state=final,lock_state=final,game_tab=videos,game=630851). The issue is that, to get there, you get the score spoiled for you.. Due to the different time zones all over the world not everyone gets the chance of watching the games live, and the condensed games are a good way of having the thrill of following a live game, in a short and always available format. Thus, I've created this very simple tool that allows the user to get the links to those videos and follow the recaps of the games, without having to know the scores of the games beforehand.
+[https://www.mlb.com/](https://www.mlb.com/) has highlight videos available for each of their games, as you can see [here](https://www.mlb.com/gameday/yankees-vs-nationals/2020/07/23/630851#game_state=final,lock_state=final,game_tab=videos,game=630851). The issue is that, to get there, you get the score spoiled for you... Due to the different time zones all over the world not everyone gets the chance of watching the games live, and the condensed games are a good way of having the thrill of following a live game, in a short and always available format. Thus, I've created this very simple tool that allows the user to get the links to those videos and follow the recaps of the games, without having to know the scores of the games beforehand.
 
 ---
 
@@ -72,7 +72,7 @@ Found 2 games!
 
 > `python generator.py 24/07/2020 --end_date 26/07/2020 --filter_by_team "St. Louis Cardinals"`
 
-4. Getting all games between the 24th and the 26th of July of 2020, only for the St. Louis Cardinals, checking if the URL exist and alternative URLs:
+4. Getting all games between the 24th and the 26th of July of 2020, only for the St. Louis Cardinals, checking if the URLs exist and also alternative URLs:
 
 > `python generator.py 24/07/2020 --end_date 26/07/2020 --filter_by_team "St. Louis Cardinals" --run_checks`
 
