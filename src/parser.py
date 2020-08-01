@@ -31,7 +31,7 @@ class Parser:
         # Get the HTML code from the URL
         base_url = "https://www.baseball-reference.com/"
         fp = urllib.request.urlopen(base_url + "boxes/?date=" + date_fmt)
-        content = fp.read().decode("utf-8")
+        content = fp.read()
         fp.close()
 
         # Prepare the content for parsing
