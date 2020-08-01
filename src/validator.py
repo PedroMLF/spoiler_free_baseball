@@ -65,10 +65,11 @@ class Validator:
         elif date.year == date_today.year:
             if date.month > date_today.month:
                 raise ValueError("Invalid Month", date.month)
-            elif date.day > date_today.day:
-                raise ValueError("Invalid Day", date.day)
-            elif date.day == date_today.day:
-                raise ValueError("Wait at least a day for the links :)")
+            elif date.month == date_today.month:
+                if date.day > date_today.day:
+                    raise ValueError("Invalid Day", date.day)
+                elif date.day == date_today.day:
+                    raise ValueError("Wait at least a day for the links :)")
 
     def _validate_team(self, team):
         """Validates that the team user in filter_by_team exists in
