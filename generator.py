@@ -62,13 +62,13 @@ def main(args):
             # Build condensed game link
             cg_at = mappings.team_cg_map[away]
             cg_ht = mappings.team_cg_map[home]
-            cg_dt = date.strftime("%-m-%d-%-y")
+            cg_dt = date.strftime("%-m-%-d-%-y")
             cg = base_link + "cg-{}-{}-{}".format(cg_at, cg_ht, cg_dt)
 
             # Build highlights link
             hl_at = mappings.team_hl_map[away]
             hl_ht = mappings.team_hl_map[home]
-            hl_dt = date.strftime("%-m-%d")
+            hl_dt = date.strftime("%-m-%-d")
             hl = base_link + "{}-vs-{}-recap-{}".format(hl_at, hl_ht, hl_dt)
 
             # Check if all links exist
